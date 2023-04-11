@@ -27,3 +27,34 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output{
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card{
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+.card>h1{
+  margin: 0;
+}
+
+.card>ul>li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.card>ul>li:last-child{
+  margin-right: 0;
+}
