@@ -7,27 +7,25 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 class Calculator{
-    constructor(num1, num2){
-        this.num1 = num1;
-        this.num2 = num2;
+    constructor(){
     }
 
-    sum(){
-        return this.num1 + this.num2;
+    sum(num1, num2){
+        return num1 + num2;
     }
 
-    subtraction(){
-        return this.num1 - this.num2;
+    subtraction(num1, num2){
+        return num1 - num2;
     }
 
-    multiplication(){
-        return this.num1 * this.num2;
+    multiplication(num1, num2){
+        return num1 * num2;
     }
 
-    division(){
-        return this.num1 / this.num2;
+    division(num1, num2){
+        return num1 / num2;
     }
 }
 
-const test = new Calculator(20, 10);
-console.log(test.sum(), test.subtraction(), test.multiplication(), test.division());
+const test = new Calculator();
+console.log(test.sum(20, 10), test.subtraction(20, 10), test.multiplication(20, 10), test.division(20, 10));
