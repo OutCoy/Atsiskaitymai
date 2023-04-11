@@ -23,10 +23,7 @@ const users = [
 // 1)
 
 function getUserAverageAge(arr){
-  let ageSum = 0;
-  arr.forEach(entry => {
-    ageSum += entry.age;
-  });
+  const ageSum = arr.reduce((acc, cur) => acc + cur.age, 0);
   return ageSum/arr.length;
 }
 
